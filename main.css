@@ -1,0 +1,250 @@
+g
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Start your base/mobile styles here */
+
+html, body {
+    font-size: 16px;
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+}
+
+header {
+    background-color: white;
+}
+
+.main-text {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+.calculator {
+    margin: 0px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-size: 1.3em;
+    background-color: lightblue;
+    text-align: center;
+}
+
+i {
+    font-size: 14px;
+}
+
+blockquote {
+    font-style: italic;
+    font-weight: lighter;
+    color: black;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 0px;
+}
+
+.caption {
+    color: gray;
+    font-size: 1em;
+    margin-left: 10px;
+}
+
+.credit {
+    font-weight: 400;
+}
+
+#photo4 {
+    width: 100%;
+    padding-left: 0px;
+}
+
+h1 {
+    font-size: 2em;
+    padding-bottom: 5px;
+    padding-top: 20px;
+    text-align: center;
+    opacity: .6;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+    opacity: .6;
+    padding-bottom: 5px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.2em;
+    opacity: .8;
+    padding-bottom: 20px;
+}
+
+h4, li {
+    font-size: 1.2em;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    opacity: .8;
+    text-align: left;
+}
+
+blockquote {
+    margin: 0;
+    /* gets rid of the default blockquote margin */
+}
+
+.pquote {
+    font-size: 200%;
+    float: right;
+    background: #ddf;
+    font-weight: bold;
+    padding: 13px;
+    margin: 0 15px 15px 0;
+}
+
+ol {
+    padding-left: 50px;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+.tips {
+    font-size: 1em;
+    color: black;
+    opacity: .8;
+}
+
+.footer {
+    padding-bottom: 60px;
+    font-size: 2em;
+    padding-left: 30px;
+    padding-right: 30px;
+    opacity: .8;
+}
+
+.photo-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0px;
+    /*z-index: 1;*/
+}
+
+.input-style {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.big-btn {
+    background-color: gray;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1em;
+    font-family: 'Arial';
+    /*font-size: .85em !important;*/
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+#submit {
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 10px;
+    width: 150px;
+    font-weight: bold;
+}
+
+img {
+    width: 40%;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+#photo3 {
+    width: 100%;
+    padding-left: 0px;
+}
+
+
+/* Tablet/Desktop overrides */
+
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    h4 {
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 40px;
+    }
+    #photo1, #photo2 {}
+}
+
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+    .circle:hover {
+        background-color: purple;
+    }
+    #popIn {
+        font-size: 5em;
+        padding: 200px 15px 30px 15px;
+    }
+    .btn_close {
+        font-size: 4em;
+    }
+    .btn_close:hover {
+        color: blue;
+    }
+}
+
+
+}
+
+}

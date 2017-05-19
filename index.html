@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <!-- set the character set -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- first step to a responsive site -->
+        <title>HTML Skeleton</title>
+
+
+
+        <!-- Your styles should be called here -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <!-- YOUR CONTENT GOES HERE -->
+        <h1>
+            Water Consumption
+        </h1>
+        <h2>
+            How do you measure up?
+        </h2>
+        <br>
+        <h3>
+            By <a href="https://twitter.com/ikcarey">Isaac Carey</a> and <a href="https://twitter.com/KellieAutumnEll">Kellie Ell</a>
+        </h3>
+
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- Your styles should be called here -->
+        <link rel="stylesheet" type="text/css" href="main.css">
+
+        <div class="photo-container">
+            <img src="img/jug.jpg" id="photo1">
+            <img src="img/jug2.jpg" id="photo2">
+
+        </div>
+
+        <div class="main-text">
+            <p>
+                Worries about droughts and <a href="http://grist.org/article/americas-hidden-water-affordability-crisis/">water crises</a> have left many wondering how to conserve water.</p>
+            <br>
+            <br>
+            <p>Human beings need less than a gallon of water each day to survive. But factor in the necessities of modern living, like showering, cooking and cleaning, and that number quickly multiples.</p>
+            <br>
+            <br>
+            <p>In fact, the average American uses between <a href="https://water.usgs.gov/edu/qa-home-percapita.html">80 and 100 gallons</a> of water per day. <a href="https://www.epa.gov/watersense/how-we-use-water#Daily%20Life">Seventy percent</a> of that
+                water is used in the home, to flush the toilet, take a shower and wash your clothes, among other things. In a month, that’s enough h2o for each person to fill a small swimming pool.</p>
+            <br>
+            <br>
+            <aside class="pquote">
+                <blockquote>
+                    “We already withdraw a lot more water than our ecosystem can handle. There is a lot of evidence that we should conserve water for future generations.”
+                </blockquote>
+            </aside>
+            <br>
+            <p>A few years ago, researchers at the <a href="https://www.scientificamerican.com/article/graphic-science-how-much-water-nations-consume/">University of Twente</a> in the Netherlands found that domestically the U.S. has the highest level of
+                water consumption per capita on the planet; each American consumes more than 457,000 gallons of water a year. A more comprehensive study by the <a href="https://water.usgs.gov/watuse/wuto.html">U.S. Geological Survey</a> estimated that
+                the entire nation consumes around 355 million gallons of water a day.</p>
+            <br>
+            <br>
+            <p>“There’s a water crisis,” said Dr. Kelly Kibler, who has a Ph.D. in water resources engineering. “We already withdraw a lot more water than our ecosystem can handle. There is a lot of evidence that we should conserve water for future generations.”</p>
+            <br>
+            <br>
+            <p>Most Americans take access to clean water for granted. In some parts of African people use less than 10 gallons of water per day — that’s less water than most Americans use just to shower. But image not having access to running water. How
+                would you brush your teeth or enjoy a cup of tea? Could you survive even a day without water?</p>
+            <br>
+            <br>
+            <p>In the spirit of Earth Day and saving Mother Earth, take this quiz to calculate your water habits. If a question doesn't apply to you, just type in 0.</p>
+        </div>
+
+        <div class="photo-container">
+            <img src="img/pipe.png" id="photo3">
+        </div>
+
+        <div class="calculator">
+            <br>
+            <br>
+            <p>
+                I take <input class="input-style" type="text" id="shower" style="width: 30px" /> showers a week.
+            </p>
+            <p>
+                <i>(One 10 minute shower is 21 gallons.)</i>
+            </p>
+            <br>
+            <br>
+            <p>
+                I flush the toilet <input class="input-style" type="text" id="toilet" style="width: 30px" /> a week.
+            </p>
+            <p>
+                <i>(Each flush is 3.5 gallons.)</i>
+            </p>
+            <br>
+            <br>
+            <p>
+                I brush my teeth <input class="input-style" type="text" id="teeth" style="width: 30px" /> a times a week.
+            </p>
+            <p>
+                <i>(Each time is half a gallon.)</i>
+            </p>
+            <br>
+            <br>
+            <p>
+                I thoroughly wash my hands <input class="input-style" type="text" id="hands" style="width: 30px" /> times a week.
+            </p>
+            <p>
+                <i>(Each time is two gallons.)</i>
+            </p>
+            <br>
+            <br>
+            <p>
+                I wash dishes by hand with running water <input class="input-style" type="text" id="dishes" style="width: 30px" /> times a week.
+            </p>
+            <p>
+                <i>(4.4 gallons for 10 minutes.)</i>
+            </p>
+            <br>
+            <br>
+            <p>
+                No, I wash dishes in a dishwasher. I do this <input class="input-style" type="text" id="dishwasher" style="width: 30px" /> times a week.
+            </p>
+            <p>
+                <i>(10 gallons for one load.)</i>
+            </p>
+            <br>
+            <br>
+            <p>
+                I cook a homemade meal <input class="input-style" type="text" id="cooking" style="width: 30px" /> times a week.
+            </p>
+            <p>
+                <i>(3 gallons per meal.)</i>
+            </p>
+            <br>
+            <br>
+            <p>
+                I wash clothes with a washing machine <input class="input-style" type="text" id="clothes" style="width: 30px" /> times a week.
+            </p>
+            <p>
+                <i>(40 gallons for one load.)</i>
+            </p>
+            <br>
+            <br>
+            <p>
+                I wash my car <input class="input-style" type="text" id="car" style="width: 30px" /> times a week.
+            </p>
+            <p>
+                <i>(5 minutes is 32 gallons.)</i>
+            </p>
+            <br>
+            <br>
+            <p>
+                I water the lawn with a hose <input class="input-style" type="text" id="lawn" style="width: 30px" /> times a week.
+            </p>
+            <p>
+                <i>(5 minutes is 32 gallons.)</i>
+            </p>
+            <br>
+            <br>
+            <p>
+                I drink <input class="input-style" type="text" id="cups" style="width: 30px" /> cups of tap water a week.
+            </p>
+            <p>
+                <i>(There are approximately 10 cups of water in one gallon.)</i>
+            </p>
+
+            <br>
+            <br>
+            <input class="big-btn" type="button" id="submit" value="Calculate" />
+            <br>
+
+            <br>
+            <br> I use <input type="text" id="sum" style="width: 50px" /> gallons of water a week.
+        </div>
+        <div class="photo-container">
+            <img src="img/pipe2.png" id="photo3">
+        </div>
+
+        <br>
+        <br>
+        <div class="footer">
+            <p class="results"></p>
+        </div>
+
+        <div class="photo-container">
+            <img src="img/pipe.png" id="photo4">
+        </div>
+
+        <div class="tips">
+            <ol>
+                <li><b id="tip">Turn off the faucet.</b> Basic stuff but we’re all guilty from time to time. Instead of mindlessly letting the water run while you brush your teeth, wash your face or shave, turn it off. This simple act will save five gallons
+                    of water. </li>
+                <br>
+                <li><b id="tip">Resist half-loads of laundry.</b> While it might be tempting because you are dying to wear your favorite pair of jeans, half loads of laundry can still use up to 30 gallons of water per load — and that is with energy-efficient
+                    machines. Call it a laundry day and wear something else.</li>
+                <br>
+                <li><b id="tip">Invest in water-efficient appliances.</b> Dr. Kibler recommends low-flow shower heads that integrate air in the water. “They allow you to enjoy the same length shower but use less water.”</li>
+                <br>
+                <li><b id="tip">Don’t squander water.</b> Got a half-full glass of water that’s gone stale? Use it on a house plant. Boil some water for that pasta dinner? Let it cool and use it to scrub your floor. It doesn’t matter how you use it, be creative
+                    — just don’t throw it away. “Try not to waste food,” Kibler said. “When food is wasted, the resources used to produce the food are also wasted.” </li>
+            </ol>
+        </div>
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+        <!-- Your javascript should be called here -->
+        <script src="main.js"></script>
+    </body>
+
+</html>
